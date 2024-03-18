@@ -35,15 +35,14 @@ function processCSV(csvFilePath) {
                 redeem_token TEXT,
                 redeemed BOOLEAN DEFAULT 0
                 )`;
-            db.run(createTableSql, (err) => {
-                if (err) {
-                    console.error(err.message);
-                }
-                console.log('Table created.');
-            });
-            importCSVData(db, desiredHeaders, csvFilePath);
-            console.log("Generated SQL: ", createTableSql);
-
+                db.run(createTableSql, (err) => {
+                    if (err) {
+                        console.error(err.message);
+                    } else {
+                        console.log('Table created.');
+                        importCSVData(db, desiredHeaders, csvFilePath);  // Call inside the callback
+                    }
+                 });
         })
 
         .on('end', () => {
