@@ -1,0 +1,34 @@
+{
+  "name": "discord-ks",
+  "version": "1.0.0",
+  "description": "All in one utility to deliver Discord rewards to kickstarter backers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igniscyan/discord-ks.git"
+  },
+  "keywords": [
+    "discord",
+    "kickstarter",
+    "authentication"
+  ],
+  "author": "Brandon Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igniscyan/discord-ks/issues"
+  },
+  "homepage": "https://github.com/igniscyan/discord-ks#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "discord.js": "^14.14.1",
+    "fs": "^0.0.1-security",
+    "sqlite3": "^5.1.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
