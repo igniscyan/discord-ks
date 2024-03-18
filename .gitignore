@@ -128,4 +128,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-backers.sqlite3
+./backers.sqlite3
